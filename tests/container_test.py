@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import unittest
-from sig import Container
+from pylex import Container
 from tests.fixtures import TestProvider
 
 

@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
 import unittest
-from sig import Provider
-from sig.providers import JinjaProvider
+from pylex import Provider
+from pylex.providers import JinjaProvider
 
 
 class JinjaProviderTest(unittest.TestCase):

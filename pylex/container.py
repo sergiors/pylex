@@ -10,9 +10,11 @@ class Container(dict):
     def has(self, name) -> bool:
         return name in self
 
-    def register(self, provider, values={}) -> None:
+    def register(self, provider, values={}):
         provider.register(self)
 
         for k, v in values.items():
             self[k] = v
+
+        return self
 

@@ -6,7 +6,7 @@ from setuptools import setup
 __version__ = '0.1.0'
 
 setup(
-    name='Sig',
+    name='Pylex',
     version=__version__,
     author='Sérgio Rafael Siqueira',
     author_email='sergio@inbep.com.br',

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from logbook import Logger
-from sig import Container, Provider
+from pylex import Container, Provider
 
 
 class LoggerProvider(Provider):

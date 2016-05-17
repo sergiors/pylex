@@ -1,6 +1,6 @@
-Sig
----
+Pylex
+-----
 
 Install
 -------
-`pip3 install -r requirements.txt`
+`python setup.py install`

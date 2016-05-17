@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from sig import Container, Provider
+from pylex import Container, Provider
 
 
 class JinjaProvider(Provider):

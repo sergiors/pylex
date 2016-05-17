@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
-from sig import Container, Provider
-from sig.http import Request, Response
+from pylex import Container, Provider
+from pylex.http import Request, Response
 
 
 class HttpProvider(Provider):
