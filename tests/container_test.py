@@ -2,7 +2,7 @@
 
 import unittest
 from sig import Container
-from tests.fixtures.test_provider import TestProvider
+from tests.fixtures import TestProvider
 
 
 class ContainerTest(unittest.TestCase):
@@ -30,6 +30,8 @@ class ContainerTest(unittest.TestCase):
 
     def test_register(self):
         container = Container()
-        container.register(TestProvider())
+        container.register(TestProvider(), {
+            'test.y': 2
+        })
 
         self.assertEqual(container['test'](2), 4)

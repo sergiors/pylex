@@ -4,4 +4,6 @@ from sig import Container
 
 
 class Application(Container):
-    pass
+
+    def __init__(self) -> None:
+        pass

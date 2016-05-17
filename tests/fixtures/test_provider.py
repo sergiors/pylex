@@ -1,10 +1,10 @@
 # -*- codig: utf-8 -*-
 
-from sig.container import Container
-from sig.provider import Provider
+from sig import Container, Provider
 
 
 class TestProvider(Provider):
 
-    def register(self, container: Container):
-        container['test'] = lambda x: x * 2
+    def register(self, container: Container) -> None:
+        container['test.y'] = 0
+        container['test'] = lambda x: x * container['test.y']

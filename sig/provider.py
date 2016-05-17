@@ -7,5 +7,5 @@ from sig import Container
 class Provider(metaclass=ABCMeta):
 
     @abstractmethod
-    def register(self, container: Container):
+    def register(self, container: Container) -> None:
         pass
