@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from abc import ABCMeta, abstractmethod
-from pylex import Container
+from . import Container
 
 
 class Provider(metaclass=ABCMeta):

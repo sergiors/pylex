@@ -1,6 +1,8 @@
 Pylex
 -----
 
+Micro-framework based on [Silex](http://silex.sensiolabs.org/)
+
 Install
 -------
-`python setup.py install`
+`python3.5 setup.py install`

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from pylex import Container, Bootable
+from . import Container, Bootable
 
 
 class Application(Container):
@@ -14,6 +14,9 @@ class Application(Container):
 
         for k, v in values.items():
             self[k] = v
+
+    def get(self, pattern):
+        pass
 
     def register(self, provider, values={}):
         self.__providers.append(provider)
@@ -31,3 +34,5 @@ class Application(Container):
             if isinstance(provider, Bootable):
                 provider.boot(self)
 
+    def run(self):
+        pass
