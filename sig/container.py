@@ -7,3 +7,6 @@ class Container(dict):
 
     def has(self, name):
         return name in self
+
+    def register(self, provider):
+        provider.register(self)
