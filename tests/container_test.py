@@ -1,10 +1,12 @@
 # -*- coding: utf-8 -*-
 
 import unittest
-from sig.container import Container
+from sig import Container
 from tests.fixtures.test_provider import TestProvider
 
+
 class ContainerTest(unittest.TestCase):
+
     def test_assign(self):
         container = Container()
         container['first_name'] = 'Jimi'
